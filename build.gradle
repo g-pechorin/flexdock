@@ -22,16 +22,16 @@ allprojects {
 	tasks.withType(JavaCompile) {
 		options.encoding = 'UTF-8'
 	}
-}
 
-publishing {
-	repositories {
-		maven { url project.rootProject.file('.m2repo/') }
-	}
+	publishing {
+		repositories {
+			maven { url project.rootProject.file('.m2repo/') }
+		}
 
-	publications {
-		mavenJava(MavenPublication) {
-			from components.java
+		publications {
+			mavenJava(MavenPublication) {
+				from components.java
+			}
 		}
 	}
 }

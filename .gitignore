@@ -1,8 +1,6 @@
-/target/
-/flexdock-core/target/
-/flexdock-demo/target/
-/flexdock-view/target/
-/flexdock-drag/target/
-/flexdock-perspective/target/
-/flexdock-dockbar/target/
-flexdock-demo/dependency-reduced-pom.xml
+
+build/
+.m2repo/
+.idea/
+.gradle/
+out/

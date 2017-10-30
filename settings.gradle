@@ -1,0 +1,14 @@
+
+rootProject.name = 'flexdock'
+
+include ':flexdock-core'
+include ':flexdock-demo'
+include ':flexdock-view'
+include ':flexdock-perspective'
+include ':flexdock-drag'
+
+project(':flexdock-core').projectDir = "$rootDir/flexdock-core" as File
+project(':flexdock-demo').projectDir = "$rootDir/flexdock-demo" as File
+project(':flexdock-view').projectDir = "$rootDir/flexdock-view" as File
+project(':flexdock-perspective').projectDir = "$rootDir/flexdock-perspective" as File
+project(':flexdock-drag').projectDir = "$rootDir/flexdock-drag" as File

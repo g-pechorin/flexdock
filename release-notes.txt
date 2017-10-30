@@ -1,7 +1,7 @@
 == flexdock 1.3 RELEASE NOTES ==
 
 Updates:
-* migrated to Apache Maven
+* forked by peterlavalle and migrated to Gradle (from the original author's Maven migration)
 
 == flexdock 1.2.4 RELEASE NOTES ==
 

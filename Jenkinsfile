@@ -12,7 +12,7 @@ pipeline {
 		stage('clone m2-repo') {
 			steps {
 		        dir('.m2repo/') {
-                    deleteDir 
+                    deleteDir()
 				}
 				sh 'git init .m2repo/'
 				dir ('.m2repo/') {

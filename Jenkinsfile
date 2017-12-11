@@ -11,7 +11,9 @@ pipeline {
 
 		stage('clone m2-repo') {
 			steps {
-				sh 'rm -dfr .m2repo/'
+		        dir('.m2repo/') {
+                    deleteDir 
+				}
 				sh 'git init .m2repo/'
 				dir ('.m2repo/') {
 					sh 'git remote add origin git@github.com:g-pechorin/m2-repo.git'
